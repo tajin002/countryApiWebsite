@@ -4,6 +4,7 @@ const loadCountry=()=>{
     .then(data => displayCountry(data))
 }
 
+let page
 
 const displayCountry=(countries)=>{
     countries.forEach(country => {
@@ -28,6 +29,12 @@ const displayCountry=(countries)=>{
         countrySection.appendChild(countryDiv);
     });
 }
+
+    // const searchCountry = ()=>{
+    //     const search = document.getElementById('country-field');
+    //     const searchValue = search.value;
+    //     loadCountry(searchValue);
+    // }
 
  //load country all details
  const loadCountryDetails = code => {
